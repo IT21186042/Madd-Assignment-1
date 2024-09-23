@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dashboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".DashboardActivity">
+
+    <!-- Top Section -->
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/topSection"
+        android:layout_width="436dp"
+        android:layout_height="306dp"
+        android:background="@drawable/top_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Profile Image -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="92dp"
+            android:src="@drawable/profile_placeholder"
+            app:civ_border_color="#FFFFFF"
+            app:civ_border_width="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Welcome Message -->
+
+        <!-- User Name -->
+
+
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins"
+            android:text="welcome !"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/profileImage"
+            app:layout_constraintTop_toBottomOf="@id/profileImage" />
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins"
+            android:text="Ruchita"
+            android:textColor="#999999"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/welcomeText"
+            app:layout_constraintTop_toBottomOf="@id/welcomeText" />
+
+
+        <TextView
+            android:id="@+id/dayMessage"
+            android:layout_width="203dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="81dp"
+            android:fontFamily="@font/poppins"
+            android:text="How is it going today ?"
+            android:textColor="#999999"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/doctorImage"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/userName"
+            app:layout_constraintTop_toBottomOf="@+id/userName" />
+
+        <ImageView
+            android:id="@+id/doctorImage"
+            android:layout_width="147dp"
+            android:layout_height="233dp"
+            android:layout_marginEnd="44dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/doctor_image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.66" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lowerSection"
+        android:layout_width="418dp"
+        android:layout_height="462dp"
+        android:layout_marginTop="268dp"
+        android:background="@drawable/rounded_upper_corners"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <!-- Search Bar -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/searchBar"
+            android:layout_width="370dp"
+            android:layout_height="60dp"
+            android:layout_margin="16dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#F1F1F1"
+            android:elevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/searchInput"
+                android:layout_width="406dp"
+                android:layout_height="62dp"
+                android:background="@null"
+                android:drawableStart="@drawable/ic_search"
+                android:fontFamily="@font/poppins"
+                android:hint="Search doctor, tests, articles..."
+                android:padding="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#999999"
+                android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Horizontal Icon Buttons -->
+
+        <!-- Health Articles Section -->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/iconButtonsRecyclerView"
+            android:layout_width="376dp"
+            android:layout_height="126dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/searchBar" />
+
+        <!-- RecyclerView for Health Articles -->
+
+        <TextView
+            android:id="@+id/healthArticleTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Health article"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/iconButtonsRecyclerView"
+            app:layout_constraintTop_toBottomOf="@id/iconButtonsRecyclerView" />
+
+        <TextView
+            android:id="@+id/seeAllArticles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="@font/poppins_extralight"
+            android:text="See all"
+            android:textColor="#1E88E5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/healthArticleTitle"
+            app:layout_constraintTop_toTopOf="@id/healthArticleTitle" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/articlesRecyclerView"
+            android:layout_width="377dp"
+            android:layout_height="254dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/healthArticleTitle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="416dp"
+        android:layout_height="757dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <fragment
+            android:id="@+id/bottomNavFragment"
+            android:name="com.example.eyezen.BottomNavigationFragment"
+            android:layout_width="415dp"
+            android:layout_height="61dp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="4dp"
+            tools:layout="@layout/bottom_nav_fragment" />
+    </FrameLayout> <!-- Leave space for bottom nav -->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
