@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "823126186788",
+    "project_id": "eyezen-94888",
+    "storage_bucket": "eyezen-94888.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:823126186788:android:44501d42e0c1cfc26af1b1",
+        "android_client_info": {
+          "package_name": "com.example.eyezen"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIaOa0EE47ev1R2a52tuafcOLwxIVJ4mw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
