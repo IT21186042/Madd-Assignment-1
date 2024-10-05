@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardViewDoctor"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    app:cardCornerRadius="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Doctor Image -->
+
+        <!-- Doctor Name -->
+
+        <!-- Doctor Specialty -->
+
+        <ImageView
+            android:id="@+id/doctorImageView"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_marginStart="20dp"
+            android:contentDescription="Doctor Image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_placeholder"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/doctorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Dr. John Doe"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/doctorSpecialty"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.346"
+            app:layout_constraintStart_toEndOf="@id/doctorImageView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/doctorSpecialty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="Ophthalmologist"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@id/doctorName"
+            app:layout_constraintTop_toBottomOf="@id/doctorName" />
+
+        <!-- Doctor Rating -->
+        <TextView
+            android:id="@+id/doctorRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.5"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@id/doctorSpecialty"
+            app:layout_constraintTop_toBottomOf="@id/doctorSpecialty" />
+
+
+        <!-- Doctor Distance -->
+        <TextView
+            android:id="@+id/doctorDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_extralight"
+            android:text="800m away"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/doctorRating"
+            app:layout_constraintTop_toBottomOf="@id/doctorRating" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="18dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="1dp"
+            app:layout_constraintBottom_toTopOf="@+id/doctorDistance"
+            app:layout_constraintStart_toEndOf="@+id/doctorRating"
+            app:layout_constraintTop_toBottomOf="@+id/doctorSpecialty"
+            app:srcCompat="@drawable/ic_rate" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

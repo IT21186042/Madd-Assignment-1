@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Target Color -->
+
+    <!-- Option Buttons -->
+
+    <!-- Stop Quiz Button -->
+
+    <View
+        android:id="@+id/colorTargetView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/colorOption1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="36dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toStartOf="@+id/colorOption2"
+        app:layout_constraintHorizontal_bias="0.287"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/colorTargetView" />
+
+    <Button
+        android:id="@+id/colorOption2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="56dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/colorOption1"
+        app:layout_constraintTop_toBottomOf="@+id/colorTargetView" />
+
+    <Button
+        android:id="@+id/colorOption3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="64dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/colorOption1" />
+
+    <Button
+        android:id="@+id/colorOption4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="64dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toEndOf="@id/colorOption3"
+        app:layout_constraintTop_toBottomOf="@id/colorOption2" />
+
+    <Button
+        android:id="@+id/stopQuizButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:text="Stop Quiz"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/colorOption3"
+        app:layout_constraintVertical_bias="0.534" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

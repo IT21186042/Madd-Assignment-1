@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/article_item"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:padding="12dp">
+
+        <!-- Article Image -->
+
+        <!-- Article Title -->
+
+        <!-- Article Date and Time Container -->
+
+        <!-- Bookmark Icon -->
+
+        <ImageView
+            android:id="@+id/articleImage"
+            android:layout_width="60dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="Article Image"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/articleTitle"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.428" />
+
+        <TextView
+            android:id="@+id/articleTitle"
+            android:layout_width="279dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/bookmarkIcon"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@+id/articleImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="267dp"
+            android:layout_height="73dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toStartOf="@id/bookmarkIcon"
+            app:layout_constraintHorizontal_bias="0.304"
+            app:layout_constraintStart_toEndOf="@+id/articleImage"
+            app:layout_constraintTop_toBottomOf="@id/articleTitle">
+
+            <!-- Article Date -->
+
+            <!-- Spacer -->
+            <TextView
+                android:id="@+id/articleDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="June 10, 2023"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="wrap_content" />
+
+            <!-- Article Read Time -->
+            <TextView
+                android:id="@+id/articleTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 min read"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/bookmarkIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="1dp"
+            android:src="@drawable/ic_bookmark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.09" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

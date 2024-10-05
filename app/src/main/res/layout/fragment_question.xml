@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Question Title -->
+
+
+    <!-- Question Description -->
+
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Question 01"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.634"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Question"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/questionTextView"
+        app:layout_constraintHorizontal_bias="0.878"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Option 1 Button (Yes) -->
+
+    <!-- Option 2 Button (No) -->
+
+    <!-- Next Button -->
+
+    <TextView
+        android:id="@+id/questionDescription"
+        android:layout_width="307dp"
+        android:layout_height="173dp"
+        android:layout_marginTop="106dp"
+        android:gravity="center"
+        android:text="Did your infant follow objects with their eyes?\n(this is called tracking)"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionTextView" />
+
+    <Button
+        android:id="@+id/option1Button"
+        style="@style/CustomButton"
+        android:layout_width="156dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/rounded_button"
+        android:fontFamily="@font/poppins_bold"
+        android:paddingLeft="32dp"
+        android:paddingTop="12dp"
+        android:paddingRight="32dp"
+        android:paddingBottom="12dp"
+        android:text="Yes"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/questionDescription"
+        app:layout_constraintWidth_percent="0.7" />
+
+    <Button
+        android:id="@+id/option2Button"
+        style="@style/CustomButton2"
+        android:layout_width="156dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/rounded_button2"
+        android:fontFamily="@font/poppins_bold"
+        android:paddingLeft="32dp"
+        android:paddingTop="12dp"
+        android:paddingRight="32dp"
+        android:paddingBottom="12dp"
+        android:text="No"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/option1Button"
+        app:layout_constraintWidth_percent="0.7" />
+
+    <Button
+        android:id="@+id/nextButton"
+        style="@style/CustomButton"
+        android:layout_width="156dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/rounded_button"
+        android:fontFamily="@font/poppins_bold"
+        android:paddingLeft="32dp"
+        android:paddingTop="12dp"
+        android:paddingRight="32dp"
+        android:paddingBottom="12dp"
+        android:text="Next"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/option2Button"
+        app:layout_constraintWidth_percent="0.7" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

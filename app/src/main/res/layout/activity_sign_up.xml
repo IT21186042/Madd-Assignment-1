@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="24dp">
+
+    <!-- Sign Up Header -->
+
+    <!-- Name Input -->
+    <TextView
+        android:id="@+id/signUpHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="@string/signupheadrer"
+
+        android:textColor="#000000"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Email Input -->
+
+    <!-- Password Input -->
+
+    <!-- Terms of Service Checkbox -->
+
+    <!-- Sign Up Button -->
+
+    <EditText
+        android:id="@+id/nameInput"
+        android:layout_width="361dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/edit_text_background"
+        android:backgroundTint="@null"
+        android:drawableStart="@drawable/ic_person"
+        android:drawablePadding="12dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="center_vertical"
+        android:hint="Enter your name"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="#000000"
+        android:textColorHint="#999999"
+
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signUpHeader" />
+
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/edit_text_background"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="12dp"
+        android:fontFamily="@font/poppins"
+        android:hint="Enter your email"
+        android:padding="16dp"
+        android:textColor="#000000"
+        android:textColorHint="#999999"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameInput" />
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/edit_text_background"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawableEnd="@drawable/ic_visibility_off"
+        android:drawablePadding="12dp"
+        android:fontFamily="@font/poppins"
+        android:hint="Enter your password"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:textColor="#000000"
+        android:textColorHint="#999999"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailInput" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="44dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/passwordInput">
+
+        <CheckBox
+            android:id="@+id/termsCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="12dp" />
+
+
+        <TextView
+            android:id="@+id/termsTextView"
+            android:layout_width="335dp"
+            android:layout_height="46dp"
+            android:autoLink="none"
+            android:fontFamily="@font/poppins"
+            android:linksClickable="false"
+            android:text="I agree to the healthcare Terms of Service and Privacy Policy"
+            android:textColor="#999999"
+            android:textIsSelectable="false"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/signUpButton"
+        style="@style/CustomButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_button"
+        android:fontFamily="@font/poppins_bold"
+        android:paddingLeft="32dp"
+        android:paddingTop="12dp"
+        android:paddingRight="32dp"
+        android:paddingBottom="12dp"
+        android:text="@string/signupbutton"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

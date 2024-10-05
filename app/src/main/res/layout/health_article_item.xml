@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    app:cardCornerRadius="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Image of the treatment -->
+
+        <!-- Title and Description -->
+
+        <ImageView
+            android:id="@+id/healthtreatmentImageView"
+            android:layout_width="match_parent"
+            android:layout_height="324dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_placeholder" />
+
+        <TextView
+            android:id="@+id/healthtreatmentTitleTextView"
+            android:layout_width="394dp"
+            android:layout_height="39dp"
+            android:layout_margin="8dp"
+            android:text="Treatment"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/healthtreatmentDescriptionTextView"
+            android:layout_width="383dp"
+            android:layout_height="131dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            android:textSize="14sp" />
+
+        <!-- Read More Button -->
+        <TextView
+            android:id="@+id/healthreadMoreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Read More..."
+            android:textColor="@color/lightblue"
+            android:textSize="14sp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

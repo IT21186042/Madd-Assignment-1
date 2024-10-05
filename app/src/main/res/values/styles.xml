@@ -1,0 +1,19 @@
+<resources>
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here if needed -->
+        <!-- You can add more theme settings here later -->
+
+    </style>
+
+    <!-- Custom Button Style -->
+    <style name="CustomButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_background</item> <!-- Rounded button background -->
+        <item name="android:textColor">#FFFFFF</item> <!-- White text -->
+    </style>
+
+    <style name="CustomButton2" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/rounded_button2</item> <!-- Rounded button background -->
+        <item name="android:textColor">#FFFFFF</item> <!-- White text -->
+    </style>
+</resources>
